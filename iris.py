@@ -26,7 +26,7 @@ df = user_input_features()
 st.subheader('User Input parameters')
 st.write(df)
 
-iris = pd.read_csv('https://raw.githubusercontent.com/feizhi98/FinalAssignment/main/IRIS.csv')
+iris = pd.read_csv('https://raw.githubusercontent.com/Ansolehah/streamlit-example/main/iris_csv.csv')
 X = iris[['sepal_length','sepal_width','petal_length','petal_width']]
 Y = iris['species']
 
@@ -53,7 +53,7 @@ st.write(prediction_proba)
 
 st.image("https://www.thespruce.com/thmb/xTuQCqR8TSPq_bb2D4yFIe54FPg=/4200x2362/smart/filters:no_upscale()/iris-flowers-plant-profile-5120188-hero-ccb44fcb101b4314b913ce5af09f9c1c.jpg")
 
-st.success("Congratulations Fei Zhi! You have completed Final Assignment (For Beginners). Let's proceed with advanced version.")
+st.success("Congratulations Ain! You have completed Final Assignment (For Beginners). Let's proceed with advanced version.")
 
 def convert_df(iris):
    return iris.to_csv().encode('utf-8')
